@@ -1,1 +1,95 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+header .header_container {
+  position: -webkit-sticky;
+  position: sticky;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-left: 2.5%;
+}
+header .header_container nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 300px 0px 0px;
+}
+header .header_container nav ul li {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px 40px 0px 0px;
+}
+header .header_container nav ul li a {
+  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #6a6d75;
+}
+header .header_container nav ul li a:hover {
+  color: #0f346c;
+}
+header .header_container nav .login_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_container nav .login_section .login_btn {
+  font-family: "Noto Sans", sans-serif;
+  color: #6a6d75;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+}
+header .header_container nav .login_section .login_btn:hover {
+  color: #0f346c;
+}
+header .header_container nav .login_section .signup_btn {
+  font-family: "Noto Sans", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  border: none;
+  background-color: #f26226;
+}
+header .header_container nav .login_section .signup_btn:hover {
+  color: #ffffff;
+}
+header .hero_div {
+  background-image: url("../../images/hero-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  margin-top: 10px;
+}
+header .hero_div .banner {
+  width: 50%;
+  padding-top: 200px;
+}
+header .hero_div .banner h1 {
+  font-family: "Noto Sans", sans-serif;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+}
+header .hero_div .banner .banner_btn {
+  font-family: "Noto Sans", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  background-color: #002c9b;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */

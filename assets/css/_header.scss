@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+button{
+    cursor:pointer;
+}
+header{
+    .header_container{
+        position:sticky;
+        padding-top:30px;
+        @include display_element_flex(center);
+        @include container(90%,2.5%);
+        nav{
+            ul{
+                @include display_element_flex(center);
+                margin:0px 300px 0px 0px;
+                li{
+                    @include style_type;
+                    margin:0px 40px 0px 0px;
+                    a{
+                        font-size:$nav_font;
+                        font-family: 'Noto Sans', sans-serif;
+                        text-decoration:none;
+                        color:$nav_links_color;
+                        &:hover{
+                            color:$nav_links_hover_color;
+                        }
+                    }
+                }
+            }
+            .login_section{
+                @include display_element_flex(center);
+                .login_btn{
+                    font-family: 'Noto Sans', sans-serif;
+                    color:$nav_links_color;
+                    font-size:$nav_font;
+                    border:none;
+                    background-color:transparent;
+           
+                    &:hover{
+                        color:$nav_links_hover_color;
+                    }
+                }
+                .signup_btn{
+                    font-family: 'Noto Sans', sans-serif;
+                    color:$global_color;
+                    font-size:$nav_font;
+                    border:none;
+                    background-color:$orange_color;
+                  
+                    &:hover{
+                        color:$global_color;
+                    }
+                }
+            }
+
+        }
+
+    }
+    .hero_div{
+        background-image:url('../../images/hero-img.png');
+        background-size: cover;
+        background-repeat:no-repeat;
+        height:800px;
+        width:100%;
+        margin-top:10px;
+        .banner{
+            width: 50%;
+            padding-top:200px;
+            h1{
+                font-family: 'Noto Sans', sans-serif;
+                color:$global_color;
+                font-size:$banner_font;
+                text-align:center;
+            }
+            .banner_btn{
+                font-family: 'Noto Sans', sans-serif;
+                color:$global_color;
+                font-size:$nav_font;
+                background-color:$hero_button_color;
+                width:200px;
+                height:60px;
+                border-radius:50px;
+                text-align: center;
+                padding:20px;
+                margin:auto;
+            }
+        }
+    }
+}
